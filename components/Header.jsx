@@ -5,6 +5,8 @@ import { CursorContext } from "./CursorContext";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiOutlineMenu } from "react-icons/ai";
+import MobileNav from "./MobileNav";
+import Nav from "./Nav";
 
 const Header = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
@@ -40,8 +42,13 @@ const Header = () => {
           animate={{ right: mobileNav ? 0 : "-100%" }}
           className="bg-primary fixed top-0 bottom-0 right-0 w-[300px] xl:hidden z-50"
         >
-          Mobile Nav
+          <MobileNav setMobileNav={setMobileNav} />
         </motion.div>
+
+        {/* Desktop Nav */}
+        <div className="hidden xl:block">
+          <Nav />
+        </div>
       </div>
     </header>
   );
