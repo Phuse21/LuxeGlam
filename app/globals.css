@@ -21,6 +21,10 @@
   .h2 {
     @apply text-[40px] xl:text-[48px] leading-[54px];
   }
+
+  .h3 {
+    @apply text-[30px] xl:text-[38px] leading-[44px];
+  }
   .h4 {
     @apply text-xl;
   }
