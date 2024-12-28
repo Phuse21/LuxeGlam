@@ -76,8 +76,8 @@ const Home = () => {
             >
               <Image
                 src={"/assets/home/img.png"}
-                width={864}
-                height={650}
+                width={804}
+                height={600}
                 quality={100}
                 alt="home"
               />
